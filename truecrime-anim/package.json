@@ -1,0 +1,30 @@
+{
+  "name": "truecrime-anim",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pipeline vidéo TikTok true crime animé (stickman 2D + HUD) — Remotion",
+  "scripts": {
+    "new": "node scripts/new-episode.mjs",
+    "voice": "node scripts/voice.mjs",
+    "bg": "node scripts/backgrounds.mjs",
+    "build-props": "node scripts/build-props.mjs",
+    "check": "node scripts/check.mjs",
+    "render": "node scripts/render.mjs",
+    "episode": "node scripts/episode.mjs",
+    "assets": "node scripts/make-sfx.mjs",
+    "studio": "remotion studio remotion/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.1.0",
+    "@remotion/cli": "4.0.539",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

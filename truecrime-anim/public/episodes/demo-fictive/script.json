@@ -1,0 +1,40 @@
+{
+  "affaire": "AFFAIRE FICTIVE · DÉMO",
+  "titre": "Elle ferme sa boutique à 23h47… et disparaît",
+  "caption": "Elle ferme sa boulangerie à 23h47 et disparaît. Un détail sur la caméra change tout… (histoire fictive) #partie1",
+  "hashtags": ["#truecrime", "#faitdivers", "#enquete", "#mystere", "#pourtoi"],
+  "music": "drone-1",
+  "sources": ["Histoire entièrement fictive (épisode de démonstration du pipeline)"],
+  "cast": [
+    { "id": "claire", "nom": "Claire", "role": "victime", "tenue": "#B5523F", "accessoires": ["cheveux-longs"] },
+    { "id": "soeur", "nom": "La sœur", "role": "proche", "tenue": "#5E7BB0", "accessoires": ["cheveux-courts"] },
+    { "id": "gendarme", "role": "enquêteur", "tenue": "#2F4A7A", "accessoires": ["casquette"] },
+    { "id": "enqueteuse", "role": "enquêtrice", "tenue": "#6A4F8C", "accessoires": ["lunettes", "cheveux-longs"] },
+    { "id": "ex", "nom": "L'ex-compagnon", "role": "mis en cause", "tenue": "#4A4F5C", "accessoires": ["cheveux-courts"], "condamne": false },
+    { "id": "inconnu", "role": "suspect", "tenue": "#070B14", "accessoires": ["capuche"], "silhouette": true, "condamne": false }
+  ],
+  "sentences": [
+    { "text": "Le 14 mars, à 23h47, Claire ferme sa boulangerie… et disparaît.", "indices": ["23h47"] , "alertes": ["disparaît"] },
+    { "text": "Claire a trente-quatre ans, elle vit seule au-dessus de sa boutique." },
+    { "text": "Chaque soir, même routine : la caisse, les lumières, puis le verrou." },
+    { "text": "Ce soir-là, son téléphone vibre. Un message d'un numéro inconnu.", "alertes": ["inconnu"] },
+    { "text": "Je suis devant. Ouvre-moi." },
+    { "text": "La caméra du parking la filme une dernière fois à 23h52.", "indices": ["23h52"] },
+    { "text": "Elle marche vers sa voiture… puis sort du champ." },
+    { "text": "Le lendemain matin, la boulangerie reste fermée. Sa sœur donne l'alerte." },
+    { "text": "Les gendarmes trouvent sa voiture, portières verrouillées, à quatre kilomètres de là." },
+    { "text": "Sur le siège passager : son téléphone. Batterie coupée." },
+    { "text": "Premier réflexe des enquêteurs : l'ex-compagnon." },
+    { "text": "Mais son alibi tient. Il était au travail, filmé toute la nuit." },
+    { "text": "Deuxième piste : le numéro inconnu. Une carte prépayée, achetée en liquide." },
+    { "text": "Impossible de savoir qui l'a utilisée." },
+    { "text": "Les jours passent. Jour trois. Jour sept. Toujours rien." },
+    { "text": "Puis une enquêtrice revoit les images du parking, image par image." },
+    { "text": "Et elle remarque un détail que tout le monde a raté.", "indices": ["détail"] },
+    { "text": "À 23h51, une minute avant Claire, quelqu'un sort déjà de la boulangerie.", "indices": ["23h51"], "alertes": ["quelqu'un"] },
+    { "text": "Quelqu'un qui avait les clés.", "indices": ["clés"] },
+    { "text": "Et cette personne… n'a jamais été entendue." },
+    { "text": "Qui avait les clés de Claire ?" },
+    { "text": "La suite dans la partie deux." }
+  ]
+}

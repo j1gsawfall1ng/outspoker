@@ -1,0 +1,1007 @@
+{
+ "decors": {
+  "boulangerie-ext-nuit": "small french village bakery storefront at night, closed metal shutter half down, warm light behind the window, empty sidewalk, one street lamp",
+  "boulangerie-int-nuit": "inside a small french bakery at night, empty wooden shelves, glass counter, cash register, dim warm light from the back room",
+  "parking-nuit": "small empty parking lot behind shops at night, seen from a high security camera angle, one parked car, wet asphalt",
+  "route-campagne-nuit": "empty country road at night in the french countryside, roadside ditch, trees, distant village lights",
+  "gendarmerie-bureau": "dark police investigation office at night, desk with two computer monitors glowing, cork board with pinned papers (no readable text), window blinds"
+ },
+ "tail": 1.8,
+ "shots": [
+  {
+   "id": 1,
+   "sentence": 0,
+   "framing": "large",
+   "bg": "boulangerie-ext-nuit",
+   "props": [
+    {
+     "type": "lampe",
+     "x": 0.82
+    }
+   ],
+   "insert": {
+    "type": "title",
+    "text": "Elle ferme à 23h47… et disparaît"
+   },
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.08
+   },
+   "sfx": [
+    {
+     "tag": "impact",
+     "at": 0
+    },
+    {
+     "tag": "vent",
+     "at": 0.2
+    }
+   ],
+   "hud": {
+    "jour": 1,
+    "heure": "23:47"
+   }
+  },
+  {
+   "id": 2,
+   "sentence": 0,
+   "at": "Claire",
+   "framing": "moyen",
+   "bg": "boulangerie-int-nuit",
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "marche",
+     "x": 0.3,
+     "toX": 0.55
+    }
+   ],
+   "camera": {
+    "type": "pan",
+    "dir": "droite"
+   },
+   "sfx": [
+    {
+     "tag": "pas",
+     "at": 0
+    },
+    {
+     "tag": "verrou",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "sentence": 1,
+   "framing": "insert",
+   "bg": "boulangerie-int-nuit",
+   "insert": {
+    "type": "polaroid",
+    "caption": "Claire, 34 ans",
+    "bg": "boulangerie-ext-nuit"
+   },
+   "sfx": [
+    {
+     "tag": "appareil-photo",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "sentence": 1,
+   "at": "elle",
+   "framing": "large",
+   "bg": "boulangerie-ext-nuit",
+   "props": [
+    {
+     "type": "lampe",
+     "x": 0.82
+    }
+   ],
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "debout",
+     "x": 0.4,
+     "scale": 0.8
+    }
+   ],
+   "camera": {
+    "type": "pan",
+    "dir": "gauche"
+   },
+   "sfx": [
+    {
+     "tag": "porte",
+     "at": 0.2
+    },
+    {
+     "tag": "clic",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "sentence": 2,
+   "framing": "insert",
+   "bg": "boulangerie-int-nuit",
+   "insert": {
+    "type": "checklist",
+    "title": "Routine du soir",
+    "items": [
+     {
+      "text": "La caisse",
+      "state": "ok"
+     },
+     {
+      "text": "Les lumières",
+      "state": "ok"
+     },
+     {
+      "text": "Le verrou",
+      "state": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "sentence": 2,
+   "at": "lumières",
+   "framing": "moyen",
+   "bg": "boulangerie-int-nuit",
+   "lumiere": "eteinte",
+   "props": [
+    {
+     "type": "porte",
+     "x": 0.75
+    }
+   ],
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "debout",
+     "x": 0.45
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.04,
+    "to": 1.1
+   },
+   "sfx": [
+    {
+     "tag": "clic",
+     "at": 0.3
+    },
+    {
+     "tag": "verrou",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "sentence": 3,
+   "framing": "moyen",
+   "bg": "boulangerie-int-nuit",
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "telephone",
+     "x": 0.5,
+     "scale": 1.2,
+     "expression": "peur",
+     "expressionAt": "vibre"
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.02,
+    "to": 1.12
+   },
+   "sfx": [
+    {
+     "tag": "vibreur",
+     "at": 0.5
+    }
+   ],
+   "hud": {
+    "heure": "23:49"
+   }
+  },
+  {
+   "id": 8,
+   "sentence": 3,
+   "at": "Un",
+   "framing": "insert",
+   "bg": "boulangerie-int-nuit",
+   "insert": {
+    "type": "phone",
+    "app": "notif",
+    "title": "Numéro inconnu",
+    "subtitle": "1 nouveau message",
+    "time": "23:49"
+   },
+   "sfx": [
+    {
+     "tag": "notif",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "sentence": 4,
+   "framing": "insert",
+   "bg": "boulangerie-int-nuit",
+   "insert": {
+    "type": "sms",
+    "from": "Numéro inconnu",
+    "time": "23:49",
+    "messages": [
+     {
+      "text": "Je suis devant."
+     },
+     {
+      "text": "Ouvre-moi."
+     }
+    ]
+   },
+   "danger": [
+    "Ouvre-moi"
+   ]
+  },
+  {
+   "id": 10,
+   "sentence": 5,
+   "framing": "large",
+   "bg": "parking-nuit",
+   "transition": "whip",
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 04",
+    "timestamp": "23:52:08"
+   },
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "marche",
+     "x": 0.2,
+     "toX": 0.38,
+     "scale": 0.65,
+     "y": 0.72
+    }
+   ],
+   "props": [
+    {
+     "type": "voiture",
+     "x": 0.72
+    }
+   ],
+   "sfx": [
+    {
+     "tag": "bip-cctv",
+     "at": 0.1
+    },
+    {
+     "tag": "pas",
+     "at": 0.6
+    }
+   ],
+   "hud": {
+    "heure": "23:52"
+   }
+  },
+  {
+   "id": 11,
+   "sentence": 5,
+   "at": "dernière",
+   "framing": "moyen",
+   "bg": "parking-nuit",
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 04",
+    "timestamp": "23:52:11"
+   },
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "marche",
+     "x": 0.38,
+     "toX": 0.48,
+     "scale": 0.9,
+     "y": 0.75
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.1,
+    "to": 1.2
+   },
+   "sfx": [
+    {
+     "tag": "bip-cctv",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "sentence": 6,
+   "framing": "large",
+   "bg": "parking-nuit",
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 04",
+    "timestamp": "23:52:14"
+   },
+   "characters": [
+    {
+     "id": "claire",
+     "pose": "marche",
+     "x": 0.45,
+     "toX": 0.62,
+     "scale": 0.65,
+     "y": 0.72
+    }
+   ],
+   "props": [
+    {
+     "type": "voiture",
+     "x": 0.72
+    }
+   ],
+   "sfx": [
+    {
+     "tag": "pas",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "sentence": 6,
+   "at": "puis",
+   "framing": "moyen",
+   "bg": "parking-nuit",
+   "shake": true,
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 04",
+    "timestamp": "23:52:19"
+   },
+   "props": [
+    {
+     "type": "voiture",
+     "x": 0.72
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.05,
+    "to": 1.15
+   },
+   "sfx": [
+    {
+     "tag": "glitch",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "sentence": 7,
+   "framing": "large",
+   "bg": "boulangerie-ext-nuit",
+   "transition": "noir",
+   "props": [
+    {
+     "type": "lampe",
+     "x": 0.82,
+     "etat": "eteinte"
+    }
+   ],
+   "camera": {
+    "type": "pan",
+    "dir": "droite"
+   },
+   "sfx": [
+    {
+     "tag": "tic-tac",
+     "at": 0.3
+    }
+   ],
+   "hud": {
+    "jour": 2,
+    "heure": "07:30"
+   }
+  },
+  {
+   "id": 15,
+   "sentence": 7,
+   "at": "Sa",
+   "framing": "moyen",
+   "bg": "boulangerie-ext-nuit",
+   "characters": [
+    {
+     "id": "soeur",
+     "pose": "telephone",
+     "x": 0.5,
+     "scale": 1.2,
+     "expression": "peur"
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.1
+   },
+   "sfx": [
+    {
+     "tag": "sonnerie",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "sentence": 8,
+   "framing": "large",
+   "bg": "route-campagne-nuit",
+   "lumiere": "sirene",
+   "props": [
+    {
+     "type": "voiture",
+     "x": 0.68
+    }
+   ],
+   "characters": [
+    {
+     "id": "gendarme",
+     "pose": "marche",
+     "x": 0.15,
+     "toX": 0.35
+    }
+   ],
+   "camera": {
+    "type": "pan",
+    "dir": "droite"
+   },
+   "sfx": [
+    {
+     "tag": "sirene",
+     "at": 0
+    },
+    {
+     "tag": "pas",
+     "at": 0.5
+    }
+   ],
+   "highlight": [
+    "portières verrouillées"
+   ],
+   "hud": {
+    "heure": "11:05"
+   }
+  },
+  {
+   "id": 17,
+   "sentence": 8,
+   "at": "à",
+   "framing": "insert",
+   "bg": "route-campagne-nuit",
+   "insert": {
+    "type": "map",
+    "from": "Boulangerie",
+    "to": "Voiture",
+    "distance": "4 km"
+   },
+   "sfx": [
+    {
+     "tag": "whoosh",
+     "at": 0
+    },
+    {
+     "tag": "bip",
+     "at": 1.1
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "sentence": 9,
+   "framing": "insert",
+   "bg": "route-campagne-nuit",
+   "insert": {
+    "type": "evidence",
+    "title": "Scellé n°1",
+    "items": [
+     "Téléphone de Claire",
+     "Siège passager",
+     "Batterie coupée"
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "sentence": 10,
+   "framing": "large",
+   "bg": "gendarmerie-bureau",
+   "transition": "whip",
+   "characters": [
+    {
+     "id": "ex",
+     "pose": "assis",
+     "x": 0.62,
+     "expression": "colere"
+    },
+    {
+     "id": "gendarme",
+     "pose": "pointe",
+     "x": 0.3
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.08
+   },
+   "sfx": [
+    {
+     "tag": "porte-claque",
+     "at": 0.1
+    },
+    {
+     "tag": "impact",
+     "at": 1.5
+    }
+   ],
+   "hud": {
+    "heure": "14:10"
+   }
+  },
+  {
+   "id": 21,
+   "sentence": 11,
+   "framing": "insert",
+   "bg": "gendarmerie-bureau",
+   "insert": {
+    "type": "checklist",
+    "title": "Alibi de l'ex",
+    "items": [
+     {
+      "text": "Au travail de 22h à 6h",
+      "state": "ok"
+     },
+     {
+      "text": "Filmé toute la nuit",
+      "state": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "sentence": 11,
+   "at": "filmé",
+   "framing": "moyen",
+   "bg": "gendarmerie-bureau",
+   "characters": [
+    {
+     "id": "ex",
+     "pose": "bras-croises",
+     "x": 0.5,
+     "scale": 1.2
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.08
+   },
+   "sfx": [
+    {
+     "tag": "bip",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "sentence": 12,
+   "framing": "large",
+   "bg": "gendarmerie-bureau",
+   "characters": [
+    {
+     "id": "enqueteuse",
+     "pose": "debout",
+     "x": 0.42
+    }
+   ],
+   "camera": {
+    "type": "pan",
+    "dir": "gauche"
+   },
+   "sfx": [
+    {
+     "tag": "clavier",
+     "at": 0.1
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "sentence": 12,
+   "at": "Une",
+   "framing": "insert",
+   "bg": "gendarmerie-bureau",
+   "insert": {
+    "type": "evidence",
+    "title": "Piste n°2",
+    "items": [
+     "Carte SIM prépayée",
+     "Payée en liquide",
+     "Aucun nom"
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "sentence": 13,
+   "framing": "moyen",
+   "bg": "parking-nuit",
+   "characters": [
+    {
+     "id": "inconnu",
+     "pose": "debout",
+     "x": 0.5,
+     "scale": 1.3,
+     "y": 0.8
+    }
+   ],
+   "camera": {
+    "type": "static-shake"
+   },
+   "sfx": [
+    {
+     "tag": "glitch",
+     "at": 0.2
+    },
+    {
+     "tag": "coeur",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "sentence": 14,
+   "framing": "insert",
+   "bg": "boulangerie-ext-nuit",
+   "insert": {
+    "type": "counter",
+    "label": "jours de disparition",
+    "from": 1,
+    "to": 7
+   },
+   "sfx": [
+    {
+     "tag": "tic-tac",
+     "at": 0
+    }
+   ],
+   "hud": {
+    "jour": 3
+   }
+  },
+  {
+   "id": 27,
+   "sentence": 14,
+   "at": "sept",
+   "framing": "moyen",
+   "bg": "boulangerie-ext-nuit",
+   "props": [
+    {
+     "type": "lampe",
+     "x": 0.82
+    }
+   ],
+   "characters": [
+    {
+     "id": "soeur",
+     "pose": "debout",
+     "x": 0.45,
+     "expression": "peur"
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.08
+   },
+   "sfx": [
+    {
+     "tag": "coeur",
+     "at": 0
+    }
+   ],
+   "hud": {
+    "jour": 7,
+    "heure": "21:00"
+   }
+  },
+  {
+   "id": 28,
+   "sentence": 15,
+   "framing": "large",
+   "bg": "gendarmerie-bureau",
+   "characters": [
+    {
+     "id": "enqueteuse",
+     "pose": "assis",
+     "x": 0.45
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.08
+   },
+   "sfx": [
+    {
+     "tag": "clavier",
+     "at": 0.2
+    }
+   ],
+   "hud": {
+    "jour": 8,
+    "heure": "02:14"
+   }
+  },
+  {
+   "id": 29,
+   "sentence": 15,
+   "at": "images#1",
+   "framing": "moyen",
+   "bg": "parking-nuit",
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 02",
+    "timestamp": "23:50:40"
+   },
+   "props": [
+    {
+     "type": "voiture",
+     "x": 0.72
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.1
+   },
+   "sfx": [
+    {
+     "tag": "bip-cctv",
+     "at": 0.1
+    },
+    {
+     "tag": "clic",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "sentence": 16,
+   "framing": "moyen",
+   "bg": "gendarmerie-bureau",
+   "characters": [
+    {
+     "id": "enqueteuse",
+     "pose": "debout",
+     "x": 0.5,
+     "scale": 1.3,
+     "expression": "choc",
+     "expressionAt": "détail"
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.14
+   },
+   "shake": true,
+   "sfx": [
+    {
+     "tag": "souffle-tension",
+     "at": 0.6
+    },
+    {
+     "tag": "coeur",
+     "at": 1.7
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "sentence": 17,
+   "framing": "large",
+   "bg": "boulangerie-ext-nuit",
+   "reveal": true,
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 02",
+    "timestamp": "23:51:03"
+   },
+   "props": [
+    {
+     "type": "porte",
+     "x": 0.3,
+     "etat": "entrouverte"
+    }
+   ],
+   "characters": [
+    {
+     "id": "inconnu",
+     "pose": "marche",
+     "x": 0.35,
+     "toX": 0.55,
+     "scale": 0.85
+    }
+   ],
+   "camera": {
+    "type": "punch",
+    "from": 1.0,
+    "to": 1.25
+   },
+   "sfx": [
+    {
+     "tag": "boom",
+     "at": 0
+    }
+   ],
+   "hud": {
+    "heure": "23:51"
+   }
+  },
+  {
+   "id": 32,
+   "sentence": 17,
+   "at": "quelqu'un",
+   "framing": "moyen",
+   "bg": "boulangerie-ext-nuit",
+   "insert": {
+    "type": "cctv",
+    "cam": "CAM 02",
+    "timestamp": "23:51:05"
+   },
+   "characters": [
+    {
+     "id": "inconnu",
+     "pose": "debout",
+     "x": 0.5,
+     "scale": 1.4,
+     "regardCamera": true
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.1,
+    "to": 1.22
+   },
+   "shake": true,
+   "sfx": [
+    {
+     "tag": "coeur",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "sentence": 18,
+   "framing": "insert",
+   "bg": "boulangerie-int-nuit",
+   "insert": {
+    "type": "checklist",
+    "title": "Sortie à 23:51",
+    "items": [
+     {
+      "text": "Porte non forcée",
+      "state": "ok"
+     },
+     {
+      "text": "Clés utilisées",
+      "state": "ok"
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "tag": "verrou",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "sentence": 19,
+   "framing": "moyen",
+   "bg": "parking-nuit",
+   "characters": [
+    {
+     "id": "inconnu",
+     "pose": "debout",
+     "x": 0.5,
+     "scale": 1.5,
+     "regardCamera": true,
+     "y": 0.84
+    }
+   ],
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.12
+   },
+   "shake": true,
+   "sfx": [
+    {
+     "tag": "coeur",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "sentence": 20,
+   "framing": "insert",
+   "bg": "boulangerie-ext-nuit",
+   "insert": {
+    "type": "question",
+    "text": "Qui avait les clés ?"
+   },
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.06
+   },
+   "sfx": [
+    {
+     "tag": "impact",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "sentence": 21,
+   "framing": "insert",
+   "bg": "boulangerie-ext-nuit",
+   "insert": {
+    "type": "partie",
+    "text": "Partie 2"
+   },
+   "camera": {
+    "type": "zoom",
+    "from": 1.0,
+    "to": 1.05
+   },
+   "sfx": [
+    {
+     "tag": "boom",
+     "at": 0
+    },
+    {
+     "tag": "coeur",
+     "at": 0.8
+    }
+   ]
+  }
+ ]
+}
