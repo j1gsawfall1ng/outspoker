@@ -5,7 +5,7 @@
 // Usage : npm run voice -- --affaire <slug> [--force] [--estimate]
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { args, episode, readJson, writeJson, style, audioDuration, sentenceWords } from "./lib.mjs";
 
 const ep = episode();
@@ -101,7 +101,7 @@ async function elevenlabs() {
 // --- voix externe (vidIQ, enregistrement perso) : voice-raw.mp3 -> voice.mp3 ---
 const parseSilences = (file, minDur = 0.18) => {
   // ffmpeg écrit silencedetect sur stderr
-  const r = execFileSync("sh", ["-c", `ffmpeg -hide_banner -nostats -i "${file}" -af silencedetect=noise=-35dB:d=${minDur} -f null - 2>&1`], { encoding: "utf8" });
+  const r = spawnSync("ffmpeg", ["-hide_banner", "-nostats", "-i", file, "-af", `silencedetect=noise=-35dB:d=${minDur}`, "-f", "null", "-"], { encoding: "utf8" }).stderr ?? "";
   const gaps = [];
   let start = null;
   for (const line of r.split("\n")) {

@@ -4,7 +4,7 @@
 // Usage : npm run build-props -- --affaire <slug>
 import fs from "node:fs";
 import path from "node:path";
-import { episode, readJson, writeJson, style, PUBLIC, norm } from "./lib.mjs";
+import { episode, readJson, writeJson, style, PUBLIC, norm, isMain } from "./lib.mjs";
 
 export function buildProps(ep) {
   const script = readJson(ep.script);
@@ -136,7 +136,7 @@ export function buildProps(ep) {
   return { props, warnings, script };
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   const ep = episode();
   const { props, warnings } = buildProps(ep);
   writeJson(ep.props, props);

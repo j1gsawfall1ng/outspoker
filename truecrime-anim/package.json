@@ -5,6 +5,7 @@
   "type": "module",
   "description": "Pipeline vidéo TikTok true crime animé (stickman 2D + HUD) — Remotion",
   "scripts": {
+    "setup": "node scripts/setup.mjs",
     "new": "node scripts/new-episode.mjs",
     "voice": "node scripts/voice.mjs",
     "bg": "node scripts/backgrounds.mjs",
@@ -26,5 +27,8 @@
   "devDependencies": {
     "@types/react": "^19.0.0",
     "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

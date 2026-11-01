@@ -12,7 +12,7 @@ if (!fs.existsSync(ep.script) || !fs.existsSync(ep.shots)) {
   console.error(`script.json / shots.json manquants dans ${ep.dir}. Crée l'épisode avec : npm run new -- --affaire ${ep.slug}`);
   process.exit(1);
 }
-const run = (script, extra = []) => execFileSync("node", [`scripts/${script}`, "--affaire", ep.slug, ...extra], { cwd: ROOT, stdio: "inherit" });
+const run = (script, extra = []) => execFileSync(process.execPath, [`scripts/${script}`, "--affaire", ep.slug, ...extra], { cwd: ROOT, stdio: "inherit" });
 
 console.log("\n① Voix off");
 run("voice.mjs", args["force-voice"] ? ["--force"] : []);

@@ -1,8 +1,8 @@
 // Utilitaires communs aux scripts du pipeline.
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
+import { execFileSync, spawnSync } from "node:child_process";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const PUBLIC = path.join(ROOT, "public");
@@ -61,13 +61,16 @@ export function episode() {
   };
 }
 
-export const has = (bin) => {
-  try {
-    execFileSync("which", [bin], { stdio: "ignore" });
-    return true;
-  } catch {
-    return false;
-  }
+// Vrai si l'outil répond (Windows, macOS, Linux)
+export const has = (bin) => spawnSync(bin, ["-version"], { stdio: "ignore" }).status === 0;
+
+// Vrai si le fichier courant est lancé directement (fonctionne avec espaces et chemins Windows)
+export const isMain = (metaUrl) => !!process.argv[1] && metaUrl === pathToFileURL(path.resolve(process.argv[1])).href;
+
+// Lance la CLI Remotion via node (pas de npx : évite les soucis de .cmd et d'espaces sous Windows)
+export const remotion = (cliArgs) => {
+  const cli = path.join(ROOT, "node_modules", "@remotion", "cli", "remotion-cli.js");
+  execFileSync(process.execPath, [cli, ...cliArgs], { cwd: ROOT, stdio: "inherit" });
 };
 
 export const audioDuration = (file) => {

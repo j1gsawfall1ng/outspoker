@@ -1,6 +1,6 @@
 // Contrôles automatiques avant rendu (règles du blueprint).
 // Usage : npm run check -- --affaire <slug>   (code de sortie 1 si erreur bloquante)
-import { episode, readJson, style, norm } from "./lib.mjs";
+import { episode, readJson, style, norm, isMain } from "./lib.mjs";
 
 export function check(props, script) {
   const r = style.rules;
@@ -66,7 +66,7 @@ export function check(props, script) {
   return { errors, warns };
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (isMain(import.meta.url)) {
   const ep = episode();
   const props = readJson(ep.props);
   const script = readJson(ep.script);

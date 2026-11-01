@@ -11,12 +11,21 @@ Envoie ton script à Claude (dans ce dépôt). La skill `video-tiktok` s'occupe 
 À la main :
 
 ```bash
-npm install && npm run assets           # une fois : dépendances + banque SFX / musiques
+npm run setup                           # une fois : vérifie Node/ffmpeg, installe, génère la banque SFX / musiques
 npm run new -- --affaire mon-affaire    # gabarit d'épisode
 npm run episode -- --affaire mon-affaire --draft   # tout le pipeline, rendu brouillon
 npm run render  -- --affaire mon-affaire           # rendu final
 npm run studio                          # prévisualisation interactive Remotion
 ```
+
+## Installation sur ton PC (Windows / Mac)
+
+1. Node.js 20+ : https://nodejs.org (version LTS).
+2. ffmpeg : Windows `winget install --id Gyan.FFmpeg -e` · Mac `brew install ffmpeg`. Ferme et rouvre ensuite le terminal / l'app.
+3. Dans `truecrime-anim/` : `npm run setup`.
+4. Test : `npm run episode -- --affaire demo-fictive --draft` → `out/demo-fictive/demo-fictive-draft.mp4`.
+
+Au premier rendu, Remotion télécharge son navigateur (une seule fois).
 
 ## Clés (facultatives, dans `.env` ou les secrets de l'environnement)
 

@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { args, episode, readJson, ROOT, has, style } from "./lib.mjs";
+import { args, episode, readJson, ROOT, has, style, isMain, remotion } from "./lib.mjs";
 
 export function render(ep, { draft = false } = {}) {
   fs.mkdirSync(ep.out, { recursive: true });
@@ -22,7 +22,7 @@ export function render(ep, { draft = false } = {}) {
   const final = path.join(ep.out, `${name}.mp4`);
   const common = ["remotion/index.ts", "Episode", `--props=${ep.props}`, ...browserArgs];
   console.log(`Rendu ${draft ? "BROUILLON" : "final"} (${props.meta.duration.toFixed(1)} s)…`);
-  execFileSync("npx", ["remotion", "render", ...common, raw, "--codec=h264", "--crf=18", `--concurrency=${process.env.RENDER_CONCURRENCY ?? "50%"}`, ...(draft ? ["--scale=0.5"] : [])], { cwd: ROOT, stdio: "inherit" });
+  remotion(["render", ...common, raw, "--codec=h264", "--crf=18", `--concurrency=${process.env.RENDER_CONCURRENCY ?? "50%"}`, ...(draft ? ["--scale=0.5"] : [])]);
 
   if (has("ffmpeg")) {
     console.log(`Normalisation audio ${style.audio.targetLufs} LUFS…`);
@@ -34,7 +34,7 @@ export function render(ep, { draft = false } = {}) {
     // miniature = frame du hook
     const hook = props.shots.find((s) => s.insert?.type === "title") ?? props.shots[0];
     const frame = Math.round((hook.start + Math.min(0.9, (hook.end - hook.start) * 0.6)) * props.meta.fps);
-    execFileSync("npx", ["remotion", "still", ...common, path.join(ep.out, "miniature.png"), `--frame=${frame}`], { cwd: ROOT, stdio: "inherit" });
+    remotion(["still", ...common, path.join(ep.out, "miniature.png"), `--frame=${frame}`]);
     const caption = [script.caption ?? script.titre, "", (script.hashtags ?? ["#truecrime", "#faitdivers", "#enquete", "#histoirevraie", "#pourtoi"]).join(" "), "", "⚠ Contenu généré par IA : active l'étiquette IA de TikTok."].join("\n");
     fs.writeFileSync(path.join(ep.out, "legende.txt"), caption + "\n");
   }
@@ -42,4 +42,4 @@ export function render(ep, { draft = false } = {}) {
   return final;
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) render(episode(), { draft: !!args.draft });
+if (isMain(import.meta.url)) render(episode(), { draft: !!args.draft });
