@@ -1,12 +1,14 @@
 // Voix off + horodatage de chaque mot -> voice.mp3 + alignment.json
 //  1. ElevenLabs (ELEVENLABS_API_KEY) : voix FR naturelle + horodatage exact
-//  2. voice.mp3 déjà présent (vidIQ, ta propre voix...) : alignement estimé sur la vraie durée
+//  2. voice.mp3 déjà présent (vidIQ, ta propre voix...) : calage exact avec Whisper s'il est installé
+//     (npm run whisper), sinon alignement estimé sur les silences
 //  3. Rien : mode muet, timings estimés à 170 mots/min (pour prévisualiser)
-// Usage : npm run voice -- --affaire <slug> [--force] [--estimate]
+// Usage : npm run voice -- --affaire <slug> [--force] [--estimate] [--no-whisper]
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync, spawnSync } from "node:child_process";
 import { args, episode, readJson, writeJson, style, audioDuration, sentenceWords } from "./lib.mjs";
+import { whisperReady, alignWithWhisper, WHISPER_MODEL } from "./whisper.mjs";
 
 const ep = episode();
 const script = readJson(ep.script);
@@ -136,7 +138,13 @@ function tightenPauses(src, dst, maxPause) {
   const graph = `${filters.join(";")};${keep.map((_, i) => `[s${i}]`).join("")}concat=n=${keep.length}:v=0:a=1,apad=pad_dur=0.25[out]`;
   const graphFile = path.join(path.dirname(dst), ".tighten.txt");
   fs.writeFileSync(graphFile, graph);
-  execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", src, "-filter_complex_script", graphFile, "-map", "[out]", "-codec:a", "libmp3lame", "-q:a", "2", dst]);
+  // ffmpeg 7+ lit le graphe avec « -/filter_complex » ; « -filter_complex_script » n'existe plus dans les versions récentes
+  const encode = (opt) => execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", src, opt, graphFile, "-map", "[out]", "-codec:a", "libmp3lame", "-q:a", "2", dst], { stdio: "pipe" });
+  try {
+    encode("-/filter_complex");
+  } catch {
+    encode("-filter_complex_script");
+  }
   fs.unlinkSync(graphFile);
   return { before: total, after: audioDuration(dst), keep };
 }
@@ -250,11 +258,23 @@ if (fs.existsSync(ep.alignment) && !args.force && !args.estimate) {
 if (args.estimate || !KEY) {
   if (fs.existsSync(ep.voice)) {
     const d = audioDuration(ep.voice);
-    console.log(`voice.mp3 trouvé (${d.toFixed(1)} s) : phrases calées sur les silences, mots estimés.`);
-    // si l'audio a été resserré, on cale sur l'audio brut (pauses de phrase plus distinctes) puis on convertit
-    const keepFile = path.join(ep.dir, ".tighten.json");
-    const words2 = fs.existsSync(rawVoice) && fs.existsSync(keepFile) ? alignOnSilences(rawVoice, mapper(JSON.parse(fs.readFileSync(keepFile, "utf8")))) : alignOnSilences(ep.voice);
-    result = { source: "estimate-from-audio", words: words2 };
+    if (!args["no-whisper"] && (await whisperReady())) {
+      console.log(`voice.mp3 trouvé (${d.toFixed(1)} s) : calage mot à mot avec Whisper (${WHISPER_MODEL})…`);
+      try {
+        const w = await alignWithWhisper(ep.voice, words, weightOf);
+        console.log(`Whisper : ${w.anchored}/${words.length} mots retrouvés, les autres répartis entre leurs voisins.`);
+        result = { source: "whisper", words: w.words };
+      } catch (e) {
+        console.warn(`${e.message} -> calage sur les silences.`);
+      }
+    } else if (!args["no-whisper"]) console.log("Astuce : npm run whisper installe Whisper pour un calage exact des sous-titres.");
+    if (!result) {
+      console.log(`voice.mp3 trouvé (${d.toFixed(1)} s) : phrases calées sur les silences, mots estimés.`);
+      // si l'audio a été resserré, on cale sur l'audio brut (pauses de phrase plus distinctes) puis on convertit
+      const keepFile = path.join(ep.dir, ".tighten.json");
+      const words2 = fs.existsSync(rawVoice) && fs.existsSync(keepFile) ? alignOnSilences(rawVoice, mapper(JSON.parse(fs.readFileSync(keepFile, "utf8")))) : alignOnSilences(ep.voice);
+      result = { source: "estimate-from-audio", words: words2 };
+    }
   } else {
     // le débit cible (mots/min) inclut déjà les respirations entre phrases
     const total = (words.length / voiceCfg.wpm) * 60 + 0.4;

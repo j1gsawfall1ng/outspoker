@@ -3,3 +3,4 @@ out/
 .env
 public/episodes/*/render.json
 public/episodes/*/bg/*.raw.png
+whisper/

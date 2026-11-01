@@ -31,7 +31,7 @@ Travaille depuis `truecrime-anim/` ; installe les dépendances si `node_modules/
 6. **Voix** (par défaut via le compte vidIQ lié de l'utilisateur, pas de clé API) :
    - `vidiq_voiceover_generate` avec `voiceId` = `voice.vidiqVoiceId` de `style.json` (ou `script.json` > `voice.vidiqVoiceId` si présent) et `script` = toutes les phrases jointes par une espace, dans l'ordre exact de `sentences`. Annonce le coût en crédits vidIQ (14 / 1000 caractères, ≈ 20 par vidéo) avant le premier appel de la session.
    - `vidiq_job_poll` jusqu'à `completed`, puis télécharge le MP3 hébergé : `curl -sSL "<url>" -o public/episodes/<slug>/voice-raw.mp3` (attention : **voice-raw**, pas voice).
-   - `npm run voice -- --affaire <slug> --estimate` : resserre les pauses trop longues (vidIQ laisse ~0,7 s entre phrases ; limite `voice.maxPause` = 0,3 s) -> `voice.mp3`, puis aligne chaque mot sur les segments de parole détectés.
+   - `npm run voice -- --affaire <slug> --estimate` : resserre les pauses trop longues (vidIQ laisse ~0,7 s entre phrases ; limite `voice.maxPause` = 0,3 s) -> `voice.mp3`, puis cale chaque mot avec Whisper (local, installé par `npm run whisper` ; `source: "whisper"` dans `alignment.json`). Sans Whisper, aligne les mots sur les segments de parole détectés (`estimate-from-audio`) : propose alors `npm run whisper` à l'utilisateur.
    - Pour choisir/changer la voix : `vidiq_voiceover_list_voices` (les voix perso/clonées de l'utilisateur ont `isCustom: true`, à privilégier), puis mets l'id dans `style.json`.
    - Après tout changement de texte : régénère la voix puis relance `--estimate`.
    - Si vidIQ n'est pas disponible : `ELEVENLABS_API_KEY` (automatique) ou un `voice.mp3` fourni par l'utilisateur ; sinon rendu muet (aperçu) — préviens-le.

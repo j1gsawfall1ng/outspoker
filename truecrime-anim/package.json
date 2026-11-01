@@ -8,6 +8,7 @@
     "setup": "node scripts/setup.mjs",
     "new": "node scripts/new-episode.mjs",
     "voice": "node scripts/voice.mjs",
+    "whisper": "node scripts/whisper.mjs",
     "bg": "node scripts/backgrounds.mjs",
     "build-props": "node scripts/build-props.mjs",
     "check": "node scripts/check.mjs",
@@ -20,6 +21,7 @@
   "dependencies": {
     "@fontsource/montserrat": "^5.1.0",
     "@remotion/cli": "4.0.539",
+    "@remotion/install-whisper-cpp": "4.0.539",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remotion": "4.0.539"

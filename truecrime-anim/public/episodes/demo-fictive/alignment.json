@@ -1,1230 +1,1230 @@
 {
-  "source": "estimate-from-audio",
+  "source": "whisper",
   "words": [
     {
       "text": "Le",
       "sentence": 0,
-      "start": 0,
-      "end": 0.248
+      "start": 0.08,
+      "end": 0.22
     },
     {
       "text": "14",
       "sentence": 0,
-      "start": 0.248,
-      "end": 0.702
+      "start": 0.22,
+      "end": 0.68
     },
     {
       "text": "mars,",
       "sentence": 0,
-      "start": 0.702,
-      "end": 1.087
+      "start": 0.68,
+      "end": 1.27
     },
     {
       "text": "à",
       "sentence": 0,
-      "start": 1.263,
-      "end": 1.352
+      "start": 1.27,
+      "end": 1.39
     },
     {
       "text": "23h47,",
       "sentence": 0,
-      "start": 1.352,
-      "end": 2.555
+      "start": 1.39,
+      "end": 2.87
     },
     {
       "text": "Claire",
       "sentence": 0,
-      "start": 2.855,
-      "end": 3.18
+      "start": 2.87,
+      "end": 3.26
     },
     {
       "text": "ferme",
       "sentence": 0,
-      "start": 3.18,
-      "end": 3.463
+      "start": 3.26,
+      "end": 3.52
     },
     {
       "text": "sa",
       "sentence": 0,
-      "start": 3.463,
-      "end": 3.618
+      "start": 3.52,
+      "end": 3.62
     },
     {
       "text": "boulangerie…",
       "sentence": 0,
-      "start": 3.618,
-      "end": 4.156
+      "start": 3.62,
+      "end": 4.45
     },
     {
       "text": "et",
       "sentence": 0,
-      "start": 4.456,
-      "end": 4.625
+      "start": 4.45,
+      "end": 4.47
     },
     {
       "text": "disparaît.",
       "sentence": 0,
-      "start": 4.625,
-      "end": 5.119
+      "start": 4.47,
+      "end": 5.32
     },
     {
       "text": "Claire",
       "sentence": 1,
-      "start": 5.419,
-      "end": 5.696
+      "start": 5.32,
+      "end": 5.633
     },
     {
       "text": "a",
       "sentence": 1,
-      "start": 5.696,
-      "end": 5.792
+      "start": 5.633,
+      "end": 5.74
     },
     {
       "text": "trente-quatre",
       "sentence": 1,
-      "start": 5.792,
-      "end": 6.287
+      "start": 5.74,
+      "end": 6.29
     },
     {
       "text": "ans,",
       "sentence": 1,
-      "start": 6.287,
-      "end": 6.455
+      "start": 6.29,
+      "end": 6.78
     },
     {
       "text": "elle",
       "sentence": 1,
-      "start": 6.755,
-      "end": 7.006
+      "start": 6.78,
+      "end": 6.94
     },
     {
       "text": "vit",
       "sentence": 1,
-      "start": 7.006,
-      "end": 7.212
+      "start": 6.94,
+      "end": 7.2
     },
     {
       "text": "seule",
       "sentence": 1,
-      "start": 7.212,
-      "end": 7.507
+      "start": 7.2,
+      "end": 7.55
     },
     {
       "text": "au-dessus",
       "sentence": 1,
-      "start": 7.507,
-      "end": 7.935
+      "start": 7.55,
+      "end": 8.06
     },
     {
       "text": "de",
       "sentence": 1,
-      "start": 7.935,
-      "end": 8.097
+      "start": 8.06,
+      "end": 8.18
     },
     {
       "text": "sa",
       "sentence": 1,
-      "start": 8.097,
-      "end": 8.259
+      "start": 8.18,
+      "end": 8.3
     },
     {
       "text": "boutique.",
       "sentence": 1,
-      "start": 8.259,
-      "end": 8.687
+      "start": 8.3,
+      "end": 8.92
     },
     {
       "text": "Chaque",
       "sentence": 2,
-      "start": 8.987,
-      "end": 9.402
+      "start": 8.92,
+      "end": 9.32
     },
     {
       "text": "soir,",
       "sentence": 2,
-      "start": 9.402,
-      "end": 9.708
+      "start": 9.32,
+      "end": 9.82
     },
     {
       "text": "même",
       "sentence": 2,
-      "start": 9.708,
-      "end": 10.014
+      "start": 9.82,
+      "end": 10.06
     },
     {
       "text": "routine",
       "sentence": 2,
-      "start": 10.014,
-      "end": 10.483
+      "start": 10.06,
+      "end": 10.8
     },
     {
       "text": ":",
       "sentence": 2,
-      "start": 10.483,
-      "end": 10.571
+      "start": 10.8,
+      "end": 10.8
     },
     {
       "text": "la",
       "sentence": 2,
-      "start": 10.871,
-      "end": 11.066
+      "start": 10.8,
+      "end": 10.93
     },
     {
       "text": "caisse,",
       "sentence": 2,
-      "start": 11.066,
-      "end": 11.475
+      "start": 10.93,
+      "end": 11.45
     },
     {
       "text": "les",
       "sentence": 2,
-      "start": 11.72,
-      "end": 11.943
+      "start": 11.45,
+      "end": 11.72
     },
     {
       "text": "lumières,",
       "sentence": 2,
-      "start": 11.943,
-      "end": 12.406
+      "start": 11.72,
+      "end": 12.67
     },
     {
       "text": "puis",
       "sentence": 2,
-      "start": 12.706,
-      "end": 12.894
+      "start": 12.67,
+      "end": 12.7
     },
     {
       "text": "le",
       "sentence": 2,
-      "start": 12.894,
-      "end": 13.016
+      "start": 12.7,
+      "end": 12.8
     },
     {
       "text": "verrou.",
       "sentence": 2,
-      "start": 13.016,
-      "end": 13.271
+      "start": 12.8,
+      "end": 13.52
     },
     {
       "text": "Ce",
       "sentence": 3,
-      "start": 13.571,
-      "end": 13.778
+      "start": 13.52,
+      "end": 13.65
     },
     {
       "text": "soir-là,",
       "sentence": 3,
-      "start": 13.778,
-      "end": 14.213
+      "start": 13.65,
+      "end": 14.4
     },
     {
       "text": "son",
       "sentence": 3,
-      "start": 14.402,
-      "end": 14.628
+      "start": 14.4,
+      "end": 14.46
     },
     {
       "text": "téléphone",
       "sentence": 3,
-      "start": 14.628,
-      "end": 15.145
+      "start": 14.46,
+      "end": 15.16
     },
     {
       "text": "vibre.",
       "sentence": 3,
-      "start": 15.145,
-      "end": 15.468
+      "start": 15.16,
+      "end": 15.72
     },
     {
       "text": "Un",
       "sentence": 3,
-      "start": 15.768,
-      "end": 15.95
+      "start": 15.72,
+      "end": 15.86
     },
     {
       "text": "message",
       "sentence": 3,
-      "start": 15.95,
-      "end": 16.382
+      "start": 15.86,
+      "end": 16.37
     },
     {
       "text": "d'un",
       "sentence": 3,
-      "start": 16.382,
-      "end": 16.615
+      "start": 16.37,
+      "end": 16.64
     },
     {
       "text": "numéro",
       "sentence": 3,
-      "start": 16.615,
-      "end": 16.997
+      "start": 16.64,
+      "end": 17.14
     },
     {
       "text": "inconnu.",
       "sentence": 3,
-      "start": 16.997,
-      "end": 17.43
+      "start": 17.14,
+      "end": 17.68
     },
     {
       "text": "Je",
       "sentence": 4,
-      "start": 17.73,
-      "end": 17.873
+      "start": 17.68,
+      "end": 17.81
     },
     {
       "text": "suis",
       "sentence": 4,
-      "start": 17.873,
-      "end": 18.094
+      "start": 17.81,
+      "end": 18.08
     },
     {
       "text": "devant.",
       "sentence": 4,
-      "start": 18.094,
-      "end": 18.394
+      "start": 18.08,
+      "end": 18.7
     },
     {
       "text": "Ouvre-moi.",
       "sentence": 4,
-      "start": 18.694,
-      "end": 19.237
+      "start": 18.7,
+      "end": 19.48
     },
     {
       "text": "La",
       "sentence": 5,
-      "start": 19.537,
-      "end": 19.682
+      "start": 19.48,
+      "end": 19.59
     },
     {
       "text": "caméra",
       "sentence": 5,
-      "start": 19.682,
-      "end": 19.986
+      "start": 19.59,
+      "end": 19.97
     },
     {
       "text": "du",
       "sentence": 5,
-      "start": 19.986,
-      "end": 20.13
+      "start": 19.97,
+      "end": 20.08
     },
     {
       "text": "parking",
       "sentence": 5,
-      "start": 20.13,
-      "end": 20.473
+      "start": 20.08,
+      "end": 20.46
     },
     {
       "text": "la",
       "sentence": 5,
-      "start": 20.473,
-      "end": 20.618
+      "start": 20.46,
+      "end": 20.57
     },
     {
       "text": "filme",
       "sentence": 5,
-      "start": 20.618,
-      "end": 20.882
+      "start": 20.57,
+      "end": 20.84
     },
     {
       "text": "une",
       "sentence": 5,
-      "start": 20.882,
-      "end": 21.066
+      "start": 20.84,
+      "end": 21
     },
     {
       "text": "dernière",
       "sentence": 5,
-      "start": 21.066,
-      "end": 21.449
+      "start": 21,
+      "end": 21.61
     },
     {
       "text": "fois",
       "sentence": 5,
-      "start": 21.449,
-      "end": 21.673
+      "start": 21.61,
+      "end": 21.76
     },
     {
       "text": "à",
       "sentence": 5,
-      "start": 21.673,
-      "end": 21.778
+      "start": 21.76,
+      "end": 21.94
     },
     {
       "text": "23h52.",
       "sentence": 5,
-      "start": 21.778,
-      "end": 23.195
+      "start": 21.94,
+      "end": 23.44
     },
     {
       "text": "Elle",
       "sentence": 6,
-      "start": 23.495,
-      "end": 23.724
+      "start": 23.44,
+      "end": 23.68
     },
     {
       "text": "marche",
       "sentence": 6,
-      "start": 23.724,
-      "end": 24.034
+      "start": 23.68,
+      "end": 24.05
     },
     {
       "text": "vers",
       "sentence": 6,
-      "start": 24.034,
-      "end": 24.263
+      "start": 24.05,
+      "end": 24.29
     },
     {
       "text": "sa",
       "sentence": 6,
-      "start": 24.263,
-      "end": 24.41
+      "start": 24.29,
+      "end": 24.42
     },
     {
       "text": "voiture…",
       "sentence": 6,
-      "start": 24.41,
-      "end": 24.761
+      "start": 24.42,
+      "end": 25.06
     },
     {
       "text": "puis",
       "sentence": 6,
-      "start": 25.061,
-      "end": 25.277
+      "start": 25.06,
+      "end": 25.26
     },
     {
       "text": "sort",
       "sentence": 6,
-      "start": 25.277,
-      "end": 25.493
+      "start": 25.26,
+      "end": 25.48
     },
     {
       "text": "du",
       "sentence": 6,
-      "start": 25.493,
-      "end": 25.633
+      "start": 25.48,
+      "end": 25.6
     },
     {
       "text": "champ.",
       "sentence": 6,
-      "start": 25.633,
-      "end": 25.887
+      "start": 25.6,
+      "end": 26.12
     },
     {
       "text": "Le",
       "sentence": 7,
-      "start": 26.187,
-      "end": 26.33
+      "start": 26.12,
+      "end": 26.24
     },
     {
       "text": "lendemain",
       "sentence": 7,
-      "start": 26.33,
-      "end": 26.746
+      "start": 26.24,
+      "end": 26.8
     },
     {
       "text": "matin,",
       "sentence": 7,
-      "start": 26.746,
-      "end": 27.006
+      "start": 26.8,
+      "end": 27.3
     },
     {
       "text": "la",
       "sentence": 7,
-      "start": 27.306,
-      "end": 27.461
+      "start": 27.3,
+      "end": 27.35
     },
     {
       "text": "boulangerie",
       "sentence": 7,
-      "start": 27.461,
-      "end": 27.998
+      "start": 27.35,
+      "end": 27.96
     },
     {
       "text": "reste",
       "sentence": 7,
-      "start": 27.998,
-      "end": 28.281
+      "start": 27.96,
+      "end": 28.25
     },
     {
       "text": "fermée.",
       "sentence": 7,
-      "start": 28.281,
-      "end": 28.606
+      "start": 28.25,
+      "end": 28.84
     },
     {
       "text": "Sa",
       "sentence": 7,
-      "start": 28.906,
-      "end": 29.076
+      "start": 28.92,
+      "end": 28.96
     },
     {
       "text": "sœur",
       "sentence": 7,
-      "start": 29.076,
-      "end": 29.339
+      "start": 28.96,
+      "end": 29.26
     },
     {
       "text": "donne",
       "sentence": 7,
-      "start": 29.339,
-      "end": 29.65
+      "start": 29.26,
+      "end": 29.57
     },
     {
       "text": "l'alerte.",
       "sentence": 7,
-      "start": 29.65,
-      "end": 30.053
+      "start": 29.57,
+      "end": 30.28
     },
     {
       "text": "Les",
       "sentence": 8,
-      "start": 30.353,
-      "end": 30.532
+      "start": 30.28,
+      "end": 30.45
     },
     {
       "text": "gendarmes",
       "sentence": 8,
-      "start": 30.532,
-      "end": 30.943
+      "start": 30.45,
+      "end": 30.99
     },
     {
       "text": "trouvent",
       "sentence": 8,
-      "start": 30.943,
-      "end": 31.314
+      "start": 30.99,
+      "end": 31.41
     },
     {
       "text": "sa",
       "sentence": 8,
-      "start": 31.314,
-      "end": 31.455
+      "start": 31.41,
+      "end": 31.51
     },
     {
       "text": "voiture,",
       "sentence": 8,
-      "start": 31.455,
-      "end": 31.788
+      "start": 31.51,
+      "end": 32.06
     },
     {
       "text": "portières",
       "sentence": 8,
-      "start": 32.05,
-      "end": 32.447
+      "start": 32.06,
+      "end": 32.53
     },
     {
       "text": "verrouillées,",
       "sentence": 8,
-      "start": 32.447,
-      "end": 32.956
+      "start": 32.53,
+      "end": 33.2
     },
     {
       "text": "à",
       "sentence": 8,
-      "start": 33.256,
-      "end": 33.375
+      "start": 33.2,
+      "end": 33.31
     },
     {
       "text": "quatre",
       "sentence": 8,
-      "start": 33.375,
-      "end": 33.721
+      "start": 33.31,
+      "end": 33.67
     },
     {
       "text": "kilomètres",
       "sentence": 8,
-      "start": 33.721,
-      "end": 34.248
+      "start": 33.67,
+      "end": 34.29
     },
     {
       "text": "de",
       "sentence": 8,
-      "start": 34.248,
-      "end": 34.413
+      "start": 34.29,
+      "end": 34.4
     },
     {
       "text": "là.",
       "sentence": 8,
-      "start": 34.413,
-      "end": 34.577
+      "start": 34.4,
+      "end": 34.8
     },
     {
       "text": "Sur",
       "sentence": 9,
-      "start": 34.877,
-      "end": 35.089
+      "start": 34.8,
+      "end": 35.01
     },
     {
       "text": "le",
       "sentence": 9,
-      "start": 35.089,
-      "end": 35.254
+      "start": 35.01,
+      "end": 35.15
     },
     {
       "text": "siège",
       "sentence": 9,
-      "start": 35.254,
-      "end": 35.557
+      "start": 35.15,
+      "end": 35.57
     },
     {
       "text": "passager",
       "sentence": 9,
-      "start": 35.557,
-      "end": 35.996
+      "start": 35.57,
+      "end": 36.37
     },
     {
       "text": ":",
       "sentence": 9,
-      "start": 35.996,
-      "end": 36.07
+      "start": 36.37,
+      "end": 36.37
     },
     {
       "text": "son",
       "sentence": 9,
       "start": 36.37,
-      "end": 36.615
+      "end": 36.49
     },
     {
       "text": "téléphone.",
       "sentence": 9,
-      "start": 36.615,
-      "end": 37.174
+      "start": 36.49,
+      "end": 37.47
     },
     {
       "text": "Batterie",
       "sentence": 9,
-      "start": 37.474,
-      "end": 37.917
+      "start": 37.47,
+      "end": 37.88
     },
     {
       "text": "coupée.",
       "sentence": 9,
-      "start": 37.917,
-      "end": 38.268
+      "start": 37.88,
+      "end": 38.48
     },
     {
       "text": "Premier",
       "sentence": 10,
-      "start": 38.568,
-      "end": 38.938
+      "start": 38.48,
+      "end": 38.88
     },
     {
       "text": "réflexe",
       "sentence": 10,
-      "start": 38.938,
-      "end": 39.308
+      "start": 38.88,
+      "end": 39.33
     },
     {
       "text": "des",
       "sentence": 10,
-      "start": 39.308,
-      "end": 39.507
+      "start": 39.33,
+      "end": 39.5
     },
     {
       "text": "enquêteurs",
       "sentence": 10,
-      "start": 39.507,
-      "end": 40.006
+      "start": 39.5,
+      "end": 40.34
     },
     {
       "text": ":",
       "sentence": 10,
-      "start": 40.006,
-      "end": 40.076
+      "start": 40.34,
+      "end": 40.34
     },
     {
       "text": "l'ex-compagnon.",
       "sentence": 10,
-      "start": 40.376,
-      "end": 41.229
+      "start": 40.34,
+      "end": 41.44
     },
     {
       "text": "Mais",
       "sentence": 11,
-      "start": 41.529,
-      "end": 41.771
+      "start": 41.44,
+      "end": 41.7
     },
     {
       "text": "son",
       "sentence": 11,
-      "start": 41.771,
-      "end": 41.969
+      "start": 41.7,
+      "end": 41.89
     },
     {
       "text": "alibi",
       "sentence": 11,
-      "start": 41.969,
-      "end": 42.254
+      "start": 41.89,
+      "end": 42.24
     },
     {
       "text": "tient.",
       "sentence": 11,
-      "start": 42.254,
-      "end": 42.538
+      "start": 42.24,
+      "end": 42.76
     },
     {
       "text": "Il",
       "sentence": 11,
-      "start": 42.838,
-      "end": 42.992
+      "start": 42.76,
+      "end": 42.88
     },
     {
       "text": "était",
       "sentence": 11,
-      "start": 42.992,
-      "end": 43.273
+      "start": 42.88,
+      "end": 43.26
     },
     {
       "text": "au",
       "sentence": 11,
-      "start": 43.273,
-      "end": 43.427
+      "start": 43.26,
+      "end": 43.38
     },
     {
       "text": "travail,",
       "sentence": 11,
-      "start": 43.427,
-      "end": 43.793
+      "start": 43.38,
+      "end": 44.06
     },
     {
       "text": "filmé",
       "sentence": 11,
-      "start": 43.992,
-      "end": 44.29
+      "start": 44.06,
+      "end": 44.31
     },
     {
       "text": "toute",
       "sentence": 11,
-      "start": 44.29,
-      "end": 44.589
+      "start": 44.31,
+      "end": 44.62
     },
     {
       "text": "la",
       "sentence": 11,
-      "start": 44.589,
-      "end": 44.752
+      "start": 44.62,
+      "end": 44.74
     },
     {
       "text": "nuit.",
       "sentence": 11,
-      "start": 44.752,
-      "end": 45.005
+      "start": 44.74,
+      "end": 45.24
     },
     {
       "text": "Deuxième",
       "sentence": 12,
-      "start": 45.305,
-      "end": 45.692
+      "start": 45.24,
+      "end": 45.82
     },
     {
       "text": "piste",
       "sentence": 12,
-      "start": 45.692,
-      "end": 45.959
+      "start": 45.82,
+      "end": 46.34
     },
     {
       "text": ":",
       "sentence": 12,
-      "start": 45.959,
-      "end": 46.024
+      "start": 46.34,
+      "end": 46.34
     },
     {
       "text": "le",
       "sentence": 12,
-      "start": 46.324,
-      "end": 46.533
+      "start": 46.34,
+      "end": 46.44
     },
     {
       "text": "numéro",
       "sentence": 12,
-      "start": 46.533,
-      "end": 46.972
+      "start": 46.44,
+      "end": 46.97
     },
     {
       "text": "inconnu.",
       "sentence": 12,
-      "start": 46.972,
-      "end": 47.468
+      "start": 46.97,
+      "end": 47.68
     },
     {
       "text": "Une",
       "sentence": 12,
-      "start": 47.768,
-      "end": 48.007
+      "start": 47.68,
+      "end": 47.87
     },
     {
       "text": "carte",
       "sentence": 12,
-      "start": 48.007,
-      "end": 48.349
+      "start": 47.87,
+      "end": 48.19
     },
     {
       "text": "prépayée,",
       "sentence": 12,
-      "start": 48.349,
-      "end": 48.845
+      "start": 48.19,
+      "end": 49.07
     },
     {
       "text": "achetée",
       "sentence": 12,
-      "start": 49.075,
-      "end": 49.46
+      "start": 49.07,
+      "end": 49.44
     },
     {
       "text": "en",
       "sentence": 12,
-      "start": 49.46,
-      "end": 49.621
+      "start": 49.44,
+      "end": 49.56
     },
     {
       "text": "liquide.",
       "sentence": 12,
-      "start": 49.621,
-      "end": 50.006
+      "start": 49.56,
+      "end": 50.24
     },
     {
       "text": "Impossible",
       "sentence": 13,
-      "start": 50.306,
-      "end": 50.878
+      "start": 50.24,
+      "end": 50.88
     },
     {
       "text": "de",
       "sentence": 13,
-      "start": 50.878,
-      "end": 51.057
+      "start": 50.88,
+      "end": 51
     },
     {
       "text": "savoir",
       "sentence": 13,
-      "start": 51.057,
-      "end": 51.432
+      "start": 51,
+      "end": 51.38
     },
     {
       "text": "qui",
       "sentence": 13,
-      "start": 51.432,
-      "end": 51.66
+      "start": 51.38,
+      "end": 51.57
     },
     {
       "text": "l'a",
       "sentence": 13,
-      "start": 51.66,
-      "end": 51.839
+      "start": 51.57,
+      "end": 51.75
     },
     {
       "text": "utilisée.",
       "sentence": 13,
-      "start": 51.839,
-      "end": 52.313
+      "start": 51.75,
+      "end": 52.56
     },
     {
       "text": "Les",
       "sentence": 14,
-      "start": 52.613,
-      "end": 52.788
+      "start": 52.56,
+      "end": 52.73
     },
     {
       "text": "jours",
       "sentence": 14,
-      "start": 52.788,
-      "end": 53.039
+      "start": 52.73,
+      "end": 53
     },
     {
       "text": "passent.",
       "sentence": 14,
-      "start": 53.039,
-      "end": 53.366
+      "start": 53,
+      "end": 53.6
     },
     {
       "text": "Jour",
       "sentence": 14,
-      "start": 53.666,
-      "end": 53.905
+      "start": 53.6,
+      "end": 53.832
     },
     {
       "text": "trois.",
       "sentence": 14,
-      "start": 53.905,
-      "end": 54.188
+      "start": 53.832,
+      "end": 54.4
     },
     {
       "text": "Jour",
       "sentence": 14,
-      "start": 54.488,
-      "end": 54.792
+      "start": 54.4,
+      "end": 54.76
     },
     {
       "text": "sept.",
       "sentence": 14,
-      "start": 54.792,
-      "end": 55.096
+      "start": 54.76,
+      "end": 55.32
     },
     {
       "text": "Toujours",
       "sentence": 14,
-      "start": 55.396,
-      "end": 55.809
+      "start": 55.32,
+      "end": 55.82
     },
     {
       "text": "rien.",
       "sentence": 14,
-      "start": 55.809,
-      "end": 56.051
+      "start": 55.82,
+      "end": 56.28
     },
     {
       "text": "Puis",
       "sentence": 15,
-      "start": 56.351,
-      "end": 56.57
+      "start": 56.28,
+      "end": 56.49
     },
     {
       "text": "une",
       "sentence": 15,
-      "start": 56.57,
-      "end": 56.75
+      "start": 56.49,
+      "end": 56.65
     },
     {
       "text": "enquêtrice",
       "sentence": 15,
-      "start": 56.75,
-      "end": 57.202
+      "start": 56.65,
+      "end": 57.22
     },
     {
       "text": "revoit",
       "sentence": 15,
-      "start": 57.202,
-      "end": 57.499
+      "start": 57.22,
+      "end": 57.52
     },
     {
       "text": "les",
       "sentence": 15,
-      "start": 57.499,
-      "end": 57.679
+      "start": 57.52,
+      "end": 57.68
     },
     {
       "text": "images",
       "sentence": 15,
-      "start": 57.679,
-      "end": 57.975
+      "start": 57.68,
+      "end": 57.99
     },
     {
       "text": "du",
       "sentence": 15,
-      "start": 57.975,
-      "end": 58.117
+      "start": 57.99,
+      "end": 58.09
     },
     {
       "text": "parking,",
       "sentence": 15,
-      "start": 58.117,
-      "end": 58.452
+      "start": 58.09,
+      "end": 58.68
     },
     {
       "text": "image",
       "sentence": 15,
-      "start": 58.752,
-      "end": 59.143
+      "start": 58.77,
+      "end": 59.1
     },
     {
       "text": "par",
       "sentence": 15,
-      "start": 59.143,
-      "end": 59.417
+      "start": 59.1,
+      "end": 59.35
     },
     {
       "text": "image.",
       "sentence": 15,
-      "start": 59.417,
-      "end": 59.808
+      "start": 59.35,
+      "end": 60.04
     },
     {
       "text": "Et",
       "sentence": 16,
-      "start": 60.108,
-      "end": 60.245
+      "start": 60.04,
+      "end": 60.13
     },
     {
       "text": "elle",
       "sentence": 16,
-      "start": 60.245,
-      "end": 60.457
+      "start": 60.13,
+      "end": 60.32
     },
     {
       "text": "remarque",
       "sentence": 16,
-      "start": 60.457,
-      "end": 60.819
+      "start": 60.32,
+      "end": 60.7
     },
     {
       "text": "un",
       "sentence": 16,
-      "start": 60.819,
-      "end": 60.955
+      "start": 60.7,
+      "end": 60.79
     },
     {
       "text": "détail",
       "sentence": 16,
-      "start": 60.955,
-      "end": 61.242
+      "start": 60.79,
+      "end": 61.16
     },
     {
       "text": "que",
       "sentence": 16,
-      "start": 61.242,
-      "end": 61.416
+      "start": 61.16,
+      "end": 61.4
     },
     {
       "text": "tout",
       "sentence": 16,
-      "start": 61.416,
-      "end": 61.628
+      "start": 61.4,
+      "end": 61.58
     },
     {
       "text": "le",
       "sentence": 16,
-      "start": 61.628,
-      "end": 61.764
+      "start": 61.58,
+      "end": 61.7
     },
     {
       "text": "monde",
       "sentence": 16,
-      "start": 61.764,
-      "end": 62.013
+      "start": 61.7,
+      "end": 62
     },
     {
       "text": "a",
       "sentence": 16,
-      "start": 62.013,
-      "end": 62.112
+      "start": 62,
+      "end": 62.13
     },
     {
       "text": "raté.",
       "sentence": 16,
-      "start": 62.112,
-      "end": 62.324
+      "start": 62.13,
+      "end": 62.56
     },
     {
       "text": "À",
       "sentence": 17,
-      "start": 62.624,
-      "end": 62.726
+      "start": 62.56,
+      "end": 62.76
     },
     {
       "text": "23h51,",
       "sentence": 17,
-      "start": 62.726,
-      "end": 64.104
+      "start": 62.76,
+      "end": 64.42
     },
     {
       "text": "une",
       "sentence": 17,
-      "start": 64.404,
-      "end": 64.591
+      "start": 64.42,
+      "end": 64.5
     },
     {
       "text": "minute",
       "sentence": 17,
-      "start": 64.591,
-      "end": 64.9
+      "start": 64.5,
+      "end": 64.87
     },
     {
       "text": "avant",
       "sentence": 17,
-      "start": 64.9,
-      "end": 65.168
+      "start": 64.87,
+      "end": 65.18
     },
     {
       "text": "Claire,",
       "sentence": 17,
-      "start": 65.168,
-      "end": 65.476
+      "start": 65.18,
+      "end": 65.68
     },
     {
       "text": "quelqu'un",
       "sentence": 17,
-      "start": 65.776,
-      "end": 66.184
+      "start": 65.68,
+      "end": 66.17
     },
     {
       "text": "sort",
       "sentence": 17,
-      "start": 66.184,
-      "end": 66.423
+      "start": 66.17,
+      "end": 66.39
     },
     {
       "text": "déjà",
       "sentence": 17,
-      "start": 66.423,
-      "end": 66.662
+      "start": 66.39,
+      "end": 66.72
     },
     {
       "text": "de",
       "sentence": 17,
-      "start": 66.662,
-      "end": 66.816
+      "start": 66.72,
+      "end": 66.83
     },
     {
       "text": "la",
       "sentence": 17,
-      "start": 66.816,
-      "end": 66.97
+      "start": 66.83,
+      "end": 66.94
     },
     {
       "text": "boulangerie.",
       "sentence": 17,
-      "start": 66.97,
-      "end": 67.506
+      "start": 66.94,
+      "end": 67.72
     },
     {
       "text": "Quelqu'un",
       "sentence": 18,
-      "start": 67.806,
-      "end": 68.166
+      "start": 67.72,
+      "end": 68.24
     },
     {
       "text": "qui",
       "sentence": 18,
-      "start": 68.166,
-      "end": 68.34
+      "start": 68.24,
+      "end": 68.39
     },
     {
       "text": "avait",
       "sentence": 18,
-      "start": 68.34,
-      "end": 68.588
+      "start": 68.39,
+      "end": 68.73
     },
     {
       "text": "les",
       "sentence": 18,
-      "start": 68.588,
-      "end": 68.761
+      "start": 68.73,
+      "end": 68.85
     },
     {
       "text": "clés.",
       "sentence": 18,
-      "start": 68.761,
-      "end": 68.972
+      "start": 68.85,
+      "end": 69.2
     },
     {
       "text": "Et",
       "sentence": 19,
-      "start": 69.272,
-      "end": 69.426
+      "start": 69.2,
+      "end": 69.34
     },
     {
       "text": "cette",
       "sentence": 19,
-      "start": 69.426,
-      "end": 69.706
+      "start": 69.34,
+      "end": 69.71
     },
     {
       "text": "personne…",
       "sentence": 19,
-      "start": 69.706,
-      "end": 70.114
+      "start": 69.71,
+      "end": 70.38
     },
     {
       "text": "n'a",
       "sentence": 19,
-      "start": 70.414,
-      "end": 70.595
+      "start": 70.38,
+      "end": 70.5
     },
     {
       "text": "jamais",
       "sentence": 19,
-      "start": 70.595,
-      "end": 70.976
+      "start": 70.5,
+      "end": 70.88
     },
     {
       "text": "été",
       "sentence": 19,
-      "start": 70.976,
-      "end": 71.206
+      "start": 70.88,
+      "end": 71.2
     },
     {
       "text": "entendue.",
       "sentence": 19,
-      "start": 71.206,
-      "end": 71.686
+      "start": 71.2,
+      "end": 71.92
     },
     {
       "text": "Qui",
       "sentence": 20,
-      "start": 71.986,
-      "end": 72.142
+      "start": 71.92,
+      "end": 72.08
     },
     {
       "text": "avait",
       "sentence": 20,
-      "start": 72.142,
-      "end": 72.365
+      "start": 72.08,
+      "end": 72.34
     },
     {
       "text": "les",
       "sentence": 20,
-      "start": 72.365,
-      "end": 72.52
+      "start": 72.34,
+      "end": 72.5
     },
     {
       "text": "clés",
       "sentence": 20,
-      "start": 72.52,
-      "end": 72.709
+      "start": 72.5,
+      "end": 72.76
     },
     {
       "text": "de",
       "sentence": 20,
-      "start": 72.709,
-      "end": 72.831
+      "start": 72.76,
+      "end": 72.85
     },
     {
       "text": "Claire",
       "sentence": 20,
-      "start": 72.831,
-      "end": 73.088
+      "start": 72.85,
+      "end": 73.36
     },
     {
       "text": "?",
       "sentence": 20,
-      "start": 73.088,
-      "end": 73.143
+      "start": 73.36,
+      "end": 73.36
     },
     {
       "text": "La",
       "sentence": 21,
-      "start": 73.443,
-      "end": 73.616
+      "start": 73.36,
+      "end": 73.48
     },
     {
       "text": "suite",
       "sentence": 21,
-      "start": 73.616,
-      "end": 73.934
+      "start": 73.48,
+      "end": 73.79
     },
     {
       "text": "dans",
       "sentence": 21,
-      "start": 74.063,
-      "end": 74.258
+      "start": 73.79,
+      "end": 74.07
     },
     {
       "text": "la",
       "sentence": 21,
-      "start": 74.258,
-      "end": 74.384
+      "start": 74.07,
+      "end": 74.16
     },
     {
       "text": "partie",
       "sentence": 21,
-      "start": 74.384,
-      "end": 74.649
+      "start": 74.16,
+      "end": 74.477
     },
     {
       "text": "deux.",
       "sentence": 21,
-      "start": 74.649,
-      "end": 74.845
+      "start": 74.477,
+      "end": 74.777
     }
   ],
-  "duration": 74.845
+  "duration": 74.777
 }

@@ -23,7 +23,10 @@ npm run studio                          # prévisualisation interactive Remotion
 1. Node.js 20+ : https://nodejs.org (version LTS).
 2. ffmpeg : Windows `winget install --id Gyan.FFmpeg -e` · Mac `brew install ffmpeg`. Ferme et rouvre ensuite le terminal / l'app.
 3. Dans `truecrime-anim/` : `npm run setup`.
-4. Test : `npm run episode -- --affaire demo-fictive --draft` → `out/demo-fictive/demo-fictive-draft.mp4`.
+4. Recommandé : `npm run whisper` installe whisper.cpp et le modèle `medium` (~1,5 Go, dans `whisper/`, non versionné).
+   La voix est alors transcrite en local et chaque sous-titre est calé sur le mot réellement prononcé.
+   Autre modèle : `WHISPER_MODEL=small` (plus léger) ou `large-v3` dans `.env`, puis relance `npm run whisper`.
+5. Test : `npm run episode -- --affaire demo-fictive --draft` → `out/demo-fictive/demo-fictive-draft.mp4`.
 
 Au premier rendu, Remotion télécharge son navigateur (une seule fois).
 
@@ -32,7 +35,8 @@ Au premier rendu, Remotion télécharge son navigateur (une seule fois).
 | Variable | Rôle | Sans elle |
 |---|---|---|
 | `GEMINI_API_KEY` | décors générés automatiquement (Google AI Studio) | `prompts.md` à coller dans l'app Gemini, images déposées dans `bg/` |
-| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | optionnel : horodatage exact des mots | **par défaut : voix ElevenLabs via ton compte vidIQ lié** (Claude la génère, alignement estimé) |
+| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | optionnel : horodatage exact des mots | **par défaut : voix ElevenLabs via ton compte vidIQ lié** (Claude la génère, calage Whisper si installé, sinon estimé) |
+| `WHISPER_MODEL` | modèle Whisper local | `medium` |
 | `GEMINI_IMAGE_MODEL` | autre modèle image | `gemini-2.5-flash-image` |
 
 > L'abonnement Gemini Pro (app) n'inclut pas l'API : la clé API se crée sur https://aistudio.google.com/apikey
