@@ -28,11 +28,13 @@ Travaille depuis `truecrime-anim/` ; installe les dépendances si `node_modules/
    - avec `GEMINI_API_KEY` : générés automatiquement à l'étape 4 (ajoute `--verify` pour le contrôle vision) ;
    - sinon : envoie à l'utilisateur le contenu de `public/episodes/<slug>/prompts.md` (prompts prêts à coller dans l'app Gemini) et demande-lui de t'envoyer les images. Enregistre chacune sous `public/episodes/<slug>/bg/<slug-du-decor>.png` (n'importe quel format/taille) puis relance `npm run bg -- --affaire <slug>` (recadrage 9:16 + cache automatiques).
    - Les décors déjà générés sont réutilisés depuis `public/bg-cache/` : réutilise les mêmes slugs entre épisodes quand le lieu s'y prête.
-6. **Voix** :
-   - avec `ELEVENLABS_API_KEY` (+ `ELEVENLABS_VOICE_ID`) : automatique, horodatage exact ;
-   - sinon, si le MCP vidIQ est disponible : `vidiq_voiceover_generate` avec le texte complet (phrases jointes), télécharge le MP3 en `public/episodes/<slug>/voice.mp3`, puis `npm run voice -- --affaire <slug> --estimate` (alignement estimé sur la vraie durée) ;
-   - sinon : rendu muet (aperçu) — préviens l'utilisateur.
-   - Après tout changement de voix ou de texte : `npm run voice -- --affaire <slug> --force` (ou `--estimate`).
+6. **Voix** (par défaut via le compte vidIQ lié de l'utilisateur, pas de clé API) :
+   - `vidiq_voiceover_generate` avec `voiceId` = `voice.vidiqVoiceId` de `style.json` (ou `script.json` > `voice.vidiqVoiceId` si présent) et `script` = toutes les phrases jointes par une espace, dans l'ordre exact de `sentences`. Annonce le coût en crédits vidIQ (14 / 1000 caractères, ≈ 20 par vidéo) avant le premier appel de la session.
+   - `vidiq_job_poll` jusqu'à `completed`, puis télécharge le MP3 hébergé : `curl -sSL "<url>" -o public/episodes/<slug>/voice.mp3`.
+   - `npm run voice -- --affaire <slug> --estimate` : alignement des mots estimé sur la vraie durée de l'audio.
+   - Pour choisir/changer la voix : `vidiq_voiceover_list_voices` (les voix perso/clonées de l'utilisateur ont `isCustom: true`, à privilégier), puis mets l'id dans `style.json`.
+   - Après tout changement de texte : régénère la voix puis relance `--estimate`.
+   - Si vidIQ n'est pas disponible : `ELEVENLABS_API_KEY` (automatique) ou un `voice.mp3` fourni par l'utilisateur ; sinon rendu muet (aperçu) — préviens-le.
 7. **Rendu** : brouillon `npm run episode -- --affaire <slug> --draft` (demi-résolution) pour valider, puis final `npm run render -- --affaire <slug>`.
    Sorties : `out/<slug>/<slug>.mp4` (1080×1920, 30 i/s, −14 LUFS), `miniature.png`, `legende.txt`.
    Envoie le MP4 et la miniature à l'utilisateur (SendUserFile) ; jette un œil à 3–4 images clés (`npx remotion still … --frame=N --scale=0.4`) avant d'annoncer que c'est bon.

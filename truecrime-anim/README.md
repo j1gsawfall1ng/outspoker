@@ -23,7 +23,7 @@ npm run studio                          # prévisualisation interactive Remotion
 | Variable | Rôle | Sans elle |
 |---|---|---|
 | `GEMINI_API_KEY` | décors générés automatiquement (Google AI Studio) | `prompts.md` à coller dans l'app Gemini, images déposées dans `bg/` |
-| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | voix FR + horodatage exact des mots | voix vidIQ / ta voix (`voice.mp3`, alignement estimé) ou rendu muet |
+| `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | optionnel : horodatage exact des mots | **par défaut : voix ElevenLabs via ton compte vidIQ lié** (Claude la génère, alignement estimé) |
 | `GEMINI_IMAGE_MODEL` | autre modèle image | `gemini-2.5-flash-image` |
 
 > L'abonnement Gemini Pro (app) n'inclut pas l'API : la clé API se crée sur https://aistudio.google.com/apikey
