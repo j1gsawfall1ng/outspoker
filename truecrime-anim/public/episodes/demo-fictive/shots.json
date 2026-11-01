@@ -36,6 +36,10 @@
     {
      "tag": "vent",
      "at": 0.2
+    },
+    {
+     "tag": "tic-tac",
+     "at": 0.9
     }
    ],
    "hud": {
@@ -333,7 +337,7 @@
   {
    "id": 12,
    "sentence": 6,
-   "framing": "large",
+   "framing": "moyen",
    "bg": "parking-nuit",
    "insert": {
     "type": "cctv",
@@ -346,8 +350,8 @@
      "pose": "marche",
      "x": 0.45,
      "toX": 0.62,
-     "scale": 0.65,
-     "y": 0.72
+     "scale": 0.9,
+     "y": 0.75
     }
    ],
    "props": [
@@ -360,25 +364,10 @@
     {
      "tag": "pas",
      "at": 0
-    }
-   ]
-  },
-  {
-   "id": 13,
-   "sentence": 6,
-   "at": "puis",
-   "framing": "moyen",
-   "bg": "parking-nuit",
-   "shake": true,
-   "insert": {
-    "type": "cctv",
-    "cam": "CAM 04",
-    "timestamp": "23:52:19"
-   },
-   "props": [
+    },
     {
-     "type": "voiture",
-     "x": 0.72
+     "tag": "glitch",
+     "at": 1.9
     }
    ],
    "camera": {
@@ -386,12 +375,7 @@
     "from": 1.05,
     "to": 1.15
    },
-   "sfx": [
-    {
-     "tag": "glitch",
-     "at": 0.3
-    }
-   ]
+   "shake": true
   },
   {
    "id": 14,
@@ -525,7 +509,13 @@
      "Siège passager",
      "Batterie coupée"
     ]
-   }
+   },
+   "sfx": [
+    {
+     "tag": "clic",
+     "at": 2.6
+    }
+   ]
   },
   {
    "id": 20,
@@ -793,6 +783,10 @@
     {
      "tag": "clic",
      "at": 0.9
+    },
+    {
+     "tag": "bip-cctv",
+     "at": 1.8
     }
    ]
   },
@@ -864,6 +858,10 @@
     {
      "tag": "boom",
      "at": 0
+    },
+    {
+     "tag": "coeur",
+     "at": 1.4
     }
    ],
    "hud": {

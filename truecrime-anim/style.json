@@ -13,7 +13,7 @@
   "subtitles": { "size": 68, "yRatio": 0.62, "yRatioInsert": 0.74, "maxWords": 3, "activeScale": 1.1, "stroke": 6 },
   "camera": { "zoomFrom": 1.0, "zoomTo": 1.08, "panRatio": 0.045, "punchTo": 1.25, "punchDuration": 0.3, "shakePx": 3 },
   "audio": { "voiceVolume": 1.0, "musicVolume": 0.07, "sfxVolume": 0.45, "ambienceVolume": 0.04, "revealSilence": 0.4, "targetLufs": -14 },
-  "voice": { "provider": "vidiq", "vidiqVoiceId": "JBFqnCBsd6RMkjVDRZzb", "voiceId": "", "model": "eleven_multilingual_v2", "wpm": 170, "stability": 0.45, "similarity": 0.8, "style": 0.35, "speed": 1.0 },
+  "voice": { "provider": "vidiq", "vidiqVoiceId": "JBFqnCBsd6RMkjVDRZzb", "voiceId": "", "model": "eleven_multilingual_v2", "wpm": 170, "maxPause": 0.3, "stability": 0.45, "similarity": 0.8, "style": 0.35, "speed": 1.0 },
   "backgrounds": {
     "basePrompt": "flat 2D vector illustration, minimalist, night scene, dark navy palette #0E1726, soft volumetric light, no characters, no people, no text, no letters, vertical 9:16, clean shapes, subtle gradients",
     "model": "gemini-2.5-flash-image",
